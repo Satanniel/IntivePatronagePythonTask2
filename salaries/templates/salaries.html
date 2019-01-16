@@ -1,0 +1,9 @@
+{% extends "base_html.html" %}
+
+{% block content %}
+<h1 style="text-align:center">Salary predictions</h1>
+<a href="{% url 'menu:index' %}"><<< Back to main menu</a>
+<div>
+  {{ html_table | safe }}
+</div>
+{% endblock %}
